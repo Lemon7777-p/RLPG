@@ -1,0 +1,7 @@
+algorithm:
+  name: reinforce
+  gamma: 0.99
+  learning_rate: 0.001
+  entropy_coef: 0.01
+  normalize_returns: true
+  max_grad_norm: 1.0

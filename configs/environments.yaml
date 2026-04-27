@@ -1,0 +1,23 @@
+environments:
+  CartPole-v1:
+    role: sanity
+    train_steps: 50000
+    eval_interval_steps: 2500
+    max_episode_steps: 500
+
+  Acrobot-v1:
+    role: benchmark
+    train_steps: 150000
+    eval_interval_steps: 5000
+    max_episode_steps: 500
+
+  LunarLander-v2:
+    role: benchmark
+    train_steps: 300000
+    eval_interval_steps: 5000
+    max_episode_steps: 1000
+    runtime_env_id: LunarLander-v3
+    requires:
+      - box2d
+      - gymnasium<1.3
+    action_space: discrete

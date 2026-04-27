@@ -1,0 +1,8 @@
+algorithm:
+  name: a2c
+  gamma: 0.99
+  learning_rate: 0.0007
+  rollout_steps: 5
+  entropy_coef: 0.01
+  value_loss_coef: 0.5
+  max_grad_norm: 0.5

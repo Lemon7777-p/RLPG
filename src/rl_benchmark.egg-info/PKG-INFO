@@ -1,6 +1,24 @@
-# RLPG
+Metadata-Version: 2.4
+Name: rl-benchmark
+Version: 0.1.0
+Summary: Reproducible reinforcement learning benchmark for REINFORCE, A2C, and PPO.
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+Requires-Dist: gymnasium[box2d]<1.3,>=1.1
+Requires-Dist: kaleido>=1.0
+Requires-Dist: numpy>=2.1
+Requires-Dist: pandas>=2.2
+Requires-Dist: plotly>=6.0
+Requires-Dist: PyYAML>=6.0
+Requires-Dist: streamlit>=1.44
+Requires-Dist: torch>=2.6
+Provides-Extra: dev
+Requires-Dist: pytest>=8.3; extra == "dev"
+Requires-Dist: ruff>=0.11; extra == "dev"
 
-RL Playground is a reproducible PyTorch study repository for comparing three policy-gradient algorithms on Gymnasium classic-control tasks:
+# RL Benchmark
+
+RL Benchmark is a reproducible PyTorch study repository for comparing three policy-gradient algorithms on Gymnasium classic-control tasks:
 
 - REINFORCE
 - A2C

@@ -1,0 +1,16 @@
+# Verified dependency set for local development, testing, and reproduction.
+# Package metadata and compatibility bounds remain in pyproject.toml.
+
+-e .
+
+gymnasium[box2d]==1.2.3
+kaleido==1.2.0
+numpy==2.4.4
+pandas==3.0.2
+plotly==6.7.0
+PyYAML==6.0.3
+streamlit==1.56.0
+torch==2.11.0
+
+pytest==9.0.3
+ruff==0.15.12

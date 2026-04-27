@@ -1,0 +1,39 @@
+project:
+  name: rl-benchmark
+  output_root: results
+  metrics_format: csv
+  seed_list:
+    - 7
+    - 11
+    - 23
+    - 47
+    - 89
+
+runtime:
+  device: auto
+  deterministic: true
+  log_interval_updates: 10
+  eval_interval_steps: 5000
+  checkpoint_interval_steps: 25000
+
+experiment:
+  main_envs:
+    - Acrobot-v1
+    - LunarLander-v2
+  sanity_envs:
+    - CartPole-v1
+  report_metrics:
+    - learning_efficiency
+    - final_performance
+    - training_stability
+
+network:
+  hidden_sizes:
+    - 64
+    - 64
+  activation: tanh
+  orthogonal_init: true
+
+evaluation:
+  episodes: 10
+  deterministic: true
